@@ -1,9 +1,9 @@
-import react from "react";
+import React from "react";
 
-function Header() {
+function Header({ name }) {
   return (
     <header>
-      <h1>wasted minds</h1>
+      <h1>{name}</h1>
     </header>
   );
 }

@@ -1,12 +1,11 @@
-import react from "react";
-import data from "../data/blog";
+import React from "react";
 
-function About() {
+function About({ image = "https://via.placeholder.com/215", about }) {
   return (
     <aside>
-      <img src={data.logo} alt="blog logo" />
+      <img src={image} alt="blog logo" />
       <p>
-        Blog about wasted minds.
+        {about}
       </p>
     </aside>
   );
