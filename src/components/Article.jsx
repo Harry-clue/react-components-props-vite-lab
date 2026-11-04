@@ -1,10 +1,11 @@
 import react from "react";
+import data from "../data/blog";
 
-function Article () {
+function Article ({ post }) {
   return (
     <article>
-      <h3>Blog Post Title</h3>
-      <small>November 4, 2026 by Harrison</small>
+      <h3>{post.title}</h3>
+      <small>{post.date} by {post.author}</small>
       <p>
         # Wasted Minds
 

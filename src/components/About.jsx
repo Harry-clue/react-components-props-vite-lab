@@ -1,9 +1,10 @@
 import react from "react";
+import data from "../data/blog";
 
 function About() {
   return (
     <aside>
-      <img src="https://via.placeholder.com/215" alt="blog logo" />
+      <img src={data.logo} alt="blog logo" />
       <p>
         Blog about wasted minds.
       </p>
